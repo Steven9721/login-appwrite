@@ -8,39 +8,30 @@ import CustomButton from '../components/CustomButton';
 
 export default function App() {
     return (
-        <SafeAreaView className="bg-primary h-full">
+        <SafeAreaView >
             <ScrollView contentContainerStyle={{ height: '100% '}}>
             <View className="w-full justify-center items-center
              min-h-[85vh] px-4">
 
           <Image
-            source={images.logo}
+            source={images.EpaLog}
             resizeMode="contain"
 
          />
 
-          <Image
-            source={images.cards}
-            className="max-w-[380px] w-full h-[298px]"
-            resizeMode="contain"
-          />
+        
       
             <View className="relative mt-5">
-            <Text className="text-3xl text-white font-bold text-center">Discover Endless Possibilites with {''}
-            <Text className="text-secondary-200"> Aora </Text>    
+            <Text className="text-3xl text-black font-bold text-center">Disfrute de nuestros servicios enfocados en Comidas{''}
+            <Text className="text-secondary-200"> Rapidas</Text>    
             </Text>
-            <Image
-            source={images.path}
-            className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
-            resizeMode="contain"
-            />
+           
             </View> 
-            <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-            Where Creativity Meets Innovation: Embark on a Journey of Limitless
-            Exploration with Aora
+            <Text className="text-sm font-pregular text-black-100 mt-7 text-center">
+          ¡Solo nosotros tenemos este sazón!
           </Text>
           <CustomButton 
-          title="Continue with Email"
+          title="ingresar por Email"
           handlePress={() => router.push('/sign-in')}
           containerStyles="w-full mt-7"
           />

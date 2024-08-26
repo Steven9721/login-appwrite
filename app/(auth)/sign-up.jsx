@@ -40,55 +40,55 @@ const SignUp = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView>
       <ScrollView>
         <View className="w-full justify-center min-h-[83vh] px-4 my-6">
           <Image
-            source={images.logo}
+            source={images.EpaLog}
             resizeMode="contain"
-            className="w-[115px] h-[34px]"
+            className="w-[65px] h-[64px]"
           />
 
-          <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
-            Sign Up to Aora
+          <Text className="text-2xl font-semibold text-black mt-10 font-psemibold">
+            ¡Registrate ahora!
           </Text>
 
           <FormField
-            title="Username"
+            title="Usuario"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })} 
             otherStyles="mt-10"
           />
           <FormField
-            title="Email"
+            title="Correo"
             value={form.email}
             handleChangeText={(e) => setForm({ ...form, email: e })} 
             otherStyles="mt-7"
             keyboardType="email-address"
           />
           <FormField
-            title="Password"
+            title="Contraseña"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })} 
             otherStyles="mt-7"
           />
 
           <CustomButton
-            title="Sign Up"
+            title="Registrarse"
             handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting} 
           />
 
           <View className="flex justify-center pt-5 flex-row gap-2">
-            <Text className="text-lg text-gray-100 font-pregular">
-              Have an account already?
+            <Text className="text-lg text-black-100 font-pregular">
+              ¿Ya tienes cuenta?
             </Text>
             <Link
               href="/sign-in"
               className="text-lg font-psemibold text-secondary"
             >
-              Sign In
+              ¡Ingresa!
             </Link>
           </View>
         </View>
