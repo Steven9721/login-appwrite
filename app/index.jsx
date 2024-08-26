@@ -18,6 +18,12 @@ export default function App() {
             resizeMode="contain"
 
          />
+
+          <Image
+            source={images.cards}
+            className="max-w-[380px] w-full h-[298px]"
+            resizeMode="contain"
+          />
       
             <View className="relative mt-5">
             <Text className="text-3xl text-white font-bold text-center">Discover Endless Possibilites with {''}
